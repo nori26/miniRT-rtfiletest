@@ -1,6 +1,6 @@
 make re
 
-run=./a.out
+run=./miniRT
 path_ko=rt/invalid
 path_ok=rt/valid
 

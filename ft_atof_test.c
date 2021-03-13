@@ -6,7 +6,7 @@
 /*   By: nosuzuki <nosuzuki@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/25 18:57:47 by nosuzuki          #+#    #+#             */
-/*   Updated: 2021/03/12 00:30:29 by nosuzuki         ###   ########.fr       */
+/*   Updated: 2021/03/13 17:09:11 by nosuzuki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,6 @@ int atof_test(int i, char *s)
 
 	printf("=============%02d=============\n", i);
 	if (((d = ft_atof(s)) == INFINITY))
-	// if (!((d = ft_atof(s, 'd'))))
 		return (puts("            \x1b[32merr\x1b[39m\n"));
 	sprintf(buft, "%.1500g", d);
 	sprintf(libuf, "%.1500g", atof(s));
