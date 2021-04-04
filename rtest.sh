@@ -55,7 +55,6 @@ segv=1
 echo "file : dir.rt"
 bash -c './miniRT rt/invalid/dir.rt > rtest1..rt 2>sanitize_res..rt' > Seg_fault..rt 2>&1
 strings sanitize_res..rt | grep SEGV > /dev/null || strings Seg_fault..rt | grep Segment > /dev/null || segv=0
-echo $segv
 print_result $segv dir
 rm rtest1..rt sanitize_res..rt Seg_fault..rt
 let cases++
